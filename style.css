@@ -1,5 +1,5 @@
 /* =========================
-   RESET GENERAL
+   ESTILOS GENERALES
 ========================= */
 
 *{
@@ -302,6 +302,32 @@ body{
     bottom: -10px;
 
     left: 20%;
+}
+
+/* =========================
+   COSMOVISION PRINCIPAL
+========================= */
+
+.dprincipal {
+    max-width: 900px;
+    margin: 0 auto 3rem auto;
+    text-align: center;
+}
+
+.dprincipal p {
+    font-size: 1.05rem;
+    line-height: 1.9;
+    color: var(--text-color);
+}
+
+/* =========================
+   DOFA GRID
+========================= */
+
+.dofa-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
 }
 
 /* =========================
@@ -943,6 +969,11 @@ footer{
     .hero-description{
 
         font-size: 0.95rem;
+    }
+
+    .dofa-grid {
+
+        grid-template-columns: 1fr;
     }
 
     .card,
