@@ -218,6 +218,8 @@ body{
     max-width: 600px;
 
     margin-bottom: 35px;
+
+   text-align: justify;
 }
 
 .btn-primary{
@@ -328,22 +330,6 @@ body{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
-}
-
-/* =========================
-   IDENTIDAD Y VOCACIÓN
-========================= */
-
-.IyV-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    width: 100%;
-    margin-top: 2rem;
-}
-
-.IyV-grid .card {
-    width: 100%;
 }
 
 /* =========================
