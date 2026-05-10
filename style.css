@@ -347,6 +347,22 @@ body{
 }
 
 /* =========================
+   IDENTIDAD Y VOCACIÓN
+========================= */
+
+.IyV-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.IyV-grid .card {
+    width: 100%;
+}
+
+/* =========================
    CARDS
 ========================= */
 
@@ -393,6 +409,46 @@ body{
 }
 
 .card p{
+
+    color: var(--gray);
+}
+
+.card-iyv{
+
+    background: var(--glass);
+
+    border:
+    1px solid rgba(255,255,255,0.08);
+
+    padding: 40px;
+
+    border-radius: 25px;
+
+    backdrop-filter: blur(12px);
+
+    transition: 0.4s ease;
+
+    text-align: justify;
+}
+
+.card-iyv:hover{
+
+    transform: translateY(-10px);
+
+    border-color:
+    rgba(212,175,55,0.4);
+}
+
+.card-iyv h3{
+
+    color: var(--gold);
+
+    margin-bottom: 20px;
+
+    font-size: 1.4rem;
+}
+
+.card-iyv p{
 
     color: var(--gray);
 }
@@ -1031,6 +1087,8 @@ footer{
 
         font-size: 0.95rem;
     }
+
+    
 
     
 
