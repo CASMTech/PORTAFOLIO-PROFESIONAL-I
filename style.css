@@ -14,6 +14,7 @@ html{
 
 body{
     font-family: 'Inter', sans-serif;
+
     background:
     linear-gradient(rgba(7, 7, 10, 0.88), rgba(7, 7, 10, 0.92)),
     url('Imagenes/fondo-ministerial.webp');
@@ -23,12 +24,10 @@ body{
     background-attachment: fixed;
 
     color: #f5f5f5;
-    overflow-x: hidden;
-    line-height: 1.8;
-}
 
-html{
-    scroll-behavior: smooth;
+    overflow-x: hidden;
+
+    line-height: 1.8;
 }
 
 /* =========================
@@ -48,7 +47,6 @@ html{
 
     --glass:
     rgba(255,255,255,0.05);
-
 }
 
 /* =========================
@@ -56,8 +54,11 @@ html{
 ========================= */
 
 .container{
+
     width: 90%;
+
     max-width: 1200px;
+
     margin: auto;
 }
 
@@ -77,7 +78,9 @@ html{
     padding: 20px 5%;
 
     display: flex;
+
     justify-content: space-between;
+
     align-items: center;
 
     z-index: 1000;
@@ -86,7 +89,8 @@ html{
 
     background: rgba(10,10,10,0.65);
 
-    border-bottom: 1px solid rgba(255,255,255,0.05);
+    border-bottom:
+    1px solid rgba(255,255,255,0.05);
 }
 
 .logo{
@@ -103,7 +107,10 @@ html{
 .nav-links{
 
     display: flex;
+
     gap: 30px;
+
+    align-items: center;
 }
 
 .nav-links a{
@@ -133,19 +140,22 @@ html{
     min-height: 100vh;
 
     display: flex;
+
     align-items: center;
 
-    padding: 120px 0 80px;
+    padding: 140px 0 80px;
 }
 
 .hero-content{
 
     width: 90%;
+
     max-width: 1200px;
 
     margin: auto;
 
     display: grid;
+
     grid-template-columns: repeat(2,1fr);
 
     align-items: center;
@@ -156,19 +166,22 @@ html{
 .hero-image{
 
     display: flex;
+
     justify-content: center;
 }
 
 .hero-image img{
 
     width: 350px;
+
     height: 350px;
 
     object-fit: cover;
 
     border-radius: 50%;
 
-    border: 4px solid rgba(212,175,55,0.5);
+    border:
+    4px solid rgba(212,175,55,0.5);
 
     box-shadow:
     0 0 40px rgba(212,175,55,0.25);
@@ -213,7 +226,8 @@ html{
 
     padding: 14px 35px;
 
-    border: 1px solid var(--gold);
+    border:
+    1px solid var(--gold);
 
     color: var(--gold);
 
@@ -286,6 +300,7 @@ html{
     position: absolute;
 
     bottom: -10px;
+
     left: 20%;
 }
 
@@ -419,18 +434,22 @@ html{
 
     left: 50%;
 
+    transform: translateX(-50%);
+
     width: 2px;
 
     height: 100%;
 
-    background: rgba(212,175,55,0.3);
+    background:
+    rgba(212,175,55,0.3);
 }
 
 .timeline-item{
 
     width: 45%;
 
-    background: rgba(255,255,255,0.04);
+    background:
+    rgba(255,255,255,0.04);
 
     padding: 30px;
 
@@ -484,9 +503,11 @@ html{
 .education-card{
 
     width: 100%;
+
     max-width: 320px;
 
-    background: rgba(255,255,255,0.04);
+    background:
+    rgba(255,255,255,0.04);
 
     padding: 35px;
 
@@ -494,7 +515,8 @@ html{
 
     text-align: center;
 
-    border: 1px solid rgba(255,255,255,0.08);
+    border:
+    1px solid rgba(255,255,255,0.08);
 
     transition: 0.4s ease;
 }
@@ -514,6 +536,7 @@ html{
 .education-card img{
 
     width: 120px;
+
     height: 120px;
 
     object-fit: cover;
@@ -522,7 +545,8 @@ html{
 
     margin-bottom: 20px;
 
-    border: 2px solid rgba(212,175,55,0.3);
+    border:
+    2px solid rgba(212,175,55,0.3);
 }
 
 .education-card h3{
@@ -537,28 +561,6 @@ html{
     color: var(--gray);
 }
 
-/* RESPONSIVE */
-
-@media(max-width: 992px){
-
-    .education-grid{
-
-        grid-template-columns: repeat(2,1fr);
-    }
-
-    .education-card:nth-child(4){
-
-        grid-column: auto;
-    }
-}
-
-@media(max-width: 768px){
-
-    .education-grid{
-
-        grid-template-columns: 1fr;
-    }
-}
 /* =========================
    BOTONES DE EVIDENCIA
 ========================= */
@@ -567,13 +569,14 @@ html{
 
     display: inline-block;
 
-    margin-top: 20px;
+    margin-top: 18px;
 
     padding: 10px 22px;
 
     border-radius: 50px;
 
-    border: 1px solid rgba(212,175,55,0.5);
+    border:
+    1px solid rgba(212,175,55,0.5);
 
     color: var(--gold);
 
@@ -587,10 +590,6 @@ html{
     rgba(255,255,255,0.03);
 
     backdrop-filter: blur(8px);
-
-    transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
 }
 
 .evidence-btn:hover{
@@ -598,11 +597,6 @@ html{
     background: var(--gold);
 
     color: #000;
-
-    transform: translateY(-3px);
-
-    box-shadow:
-    0 8px 20px rgba(212,175,55,0.25);
 
     transform: translateY(-3px);
 
@@ -662,7 +656,7 @@ html{
 
     color: var(--gray);
 
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 /* =========================
@@ -709,6 +703,8 @@ footer{
 
     justify-content: center;
 
+    flex-wrap: wrap;
+
     gap: 30px;
 
     margin-bottom: 30px;
@@ -736,7 +732,19 @@ footer{
 }
 
 /* =========================
-   RESPONSIVE
+   RESPONSIVE LARGE
+========================= */
+
+@media(max-width: 1200px){
+
+    .hero-text h1{
+
+        font-size: 3.5rem;
+    }
+}
+
+/* =========================
+   RESPONSIVE TABLET
 ========================= */
 
 @media(max-width: 992px){
@@ -744,10 +752,19 @@ footer{
     .hero-content,
     .content-grid,
     .cards-grid,
-    .education-grid,
     .skills-container{
 
         grid-template-columns: 1fr;
+    }
+
+    .education-grid{
+
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .education-card:nth-child(4){
+
+        grid-column: auto;
     }
 
     .hero{
@@ -762,38 +779,100 @@ footer{
 
     .timeline::before{
 
-        left: 0;
+        left: 20px;
+
+        transform: none;
     }
 
     .timeline-item{
 
-        width: 100%;
+        width: calc(100% - 50px);
 
-        left: 0 !important;
+        left: 50px !important;
+    }
+
+    .navbar{
+
+        padding: 18px 5%;
+    }
+
+    .nav-links{
+
+        gap: 18px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
     }
 }
 
+/* =========================
+   RESPONSIVE MOBILE
+========================= */
+
 @media(max-width: 768px){
+
+    body{
+
+        background-attachment: scroll;
+    }
 
     .navbar{
 
         flex-direction: column;
 
         gap: 15px;
+
+        padding: 15px 5%;
+    }
+
+    .logo{
+
+        font-size: 1.3rem;
     }
 
     .nav-links{
 
-        flex-wrap: wrap;
+        width: 100%;
+
+        gap: 12px;
 
         justify-content: center;
+    }
 
-        gap: 15px;
+    .nav-links a{
+
+        font-size: 0.85rem;
+    }
+
+    .hero{
+
+        padding-top: 200px;
+    }
+
+    .hero-content{
+
+        gap: 50px;
     }
 
     .hero-text h1{
 
-        font-size: 2.8rem;
+        font-size: 2.7rem;
+    }
+
+    .subtitle{
+
+        font-size: 1rem;
+    }
+
+    .section{
+
+        padding: 90px 0;
+    }
+
+    .section-title{
+
+        margin-bottom: 50px;
     }
 
     .section-title h2{
@@ -803,21 +882,67 @@ footer{
 
     .hero-image img{
 
-        width: 250px;
-        height: 250px;
+        width: 240px;
+
+        height: 240px;
+    }
+
+    .education-grid{
+
+        grid-template-columns: 1fr;
+    }
+
+    .education-card{
+
+        max-width: 100%;
+    }
+
+    .timeline-item{
+
+        width: calc(100% - 35px);
+
+        left: 35px !important;
+
+        padding: 25px;
+    }
+
+    .timeline::before{
+
+        left: 10px;
     }
 }
 
+/* =========================
+   RESPONSIVE SMALL MOBILE
+========================= */
+
 @media(max-width: 576px){
+
+    .container{
+
+        width: 92%;
+    }
+
+    .hero{
+
+        padding-top: 220px;
+    }
 
     .hero-text h1{
 
-        font-size: 2.2rem;
+        font-size: 2.1rem;
+
+        line-height: 1.2;
     }
 
     .subtitle{
 
-        font-size: 1rem;
+        font-size: 0.95rem;
+    }
+
+    .hero-description{
+
+        font-size: 0.95rem;
     }
 
     .card,
@@ -826,5 +951,46 @@ footer{
     .skill-box{
 
         padding: 25px;
+    }
+
+    .section-title h2{
+
+        font-size: 1.9rem;
+    }
+
+    .hero-image img{
+
+        width: 200px;
+
+        height: 200px;
+    }
+
+    .timeline-item{
+
+        padding: 20px;
+    }
+
+    .timeline-item h3{
+
+        font-size: 1rem;
+    }
+
+    .timeline-item span{
+
+        font-size: 0.9rem;
+    }
+
+    .evidence-btn{
+
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .social-links{
+
+        flex-direction: column;
+
+        gap: 15px;
     }
 }
