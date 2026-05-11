@@ -313,7 +313,7 @@ body{
 .dprincipal {
     max-width: 900px;
     margin: 0 auto 3rem auto;
-    text-align: center;
+    text-align: justify;
 }
 
 .dprincipal p {
