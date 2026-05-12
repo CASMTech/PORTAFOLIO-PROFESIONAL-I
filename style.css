@@ -618,48 +618,32 @@ body{
    EDUCATION
 ========================= */
 
-.education-grid{
-
-    display: grid;
-
-    grid-template-columns: repeat(3, 1fr);
-
+.education-grid {
+    display: flex;         /* Cambiamos grid por flex */
+    flex-wrap: wrap;       /* Permite que las tarjetas bajen de fila */
     gap: 30px;
-
-    justify-items: center;
-}
-
-.education-card{
-
+    justify-content: center; /* ESTA ES LA CLAVE: centra cualquier elemento en la última fila */
     width: 100%;
+}
 
-    max-width: 320px;
-
-    background:
-    rgba(255,255,255,0.04);
-
+.education-card {
+    /* Mantenemos un ancho base para que quepan 3 por fila en pantallas grandes */
+    flex: 1 1 320px; 
+    max-width: 350px; /* Ajusta según prefieras el tamaño */
+    background: rgba(255,255,255,0.04);
     padding: 35px;
-
     border-radius: 25px;
-
     text-align: center;
-
-    border:
-    1px solid rgba(255,255,255,0.08);
-
+    border: 1px solid rgba(255,255,255,0.08);
     transition: 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.education-card:hover{
-
+.education-card:hover {
     transform: translateY(-10px);
-}
-
-/* CENTRAR LA 4TA CARD */
-
-.education-card:nth-child(4){
-
-    grid-column: 2 / 3;
+    border-color: rgba(212,175,55,0.4);
 }
 
 .education-card img{
@@ -886,16 +870,6 @@ footer{
         grid-template-columns: 1fr;
     }
 
-    .education-grid{
-
-        grid-template-columns: repeat(2,1fr);
-    }
-
-    .education-card:nth-child(4){
-
-        grid-column: auto;
-    }
-
     .hero{
 
         text-align: center;
@@ -1016,11 +990,6 @@ footer{
         height: 240px;
     }
 
-    .education-grid{
-
-        grid-template-columns: 1fr;
-    }
-
     .education-card{
 
         max-width: 100%;
@@ -1073,11 +1042,7 @@ footer{
 
         font-size: 0.95rem;
     }
-
-    
-
-    
-
+      
     .dofa-grid {
 
         grid-template-columns: 1fr;
