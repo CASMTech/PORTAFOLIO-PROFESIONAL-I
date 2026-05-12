@@ -627,9 +627,11 @@ body{
 }
 
 .education-card {
-    /* Mantenemos un ancho base para que quepan 3 por fila en pantallas grandes */
-    flex: 1 1 320px; 
-    max-width: 350px; /* Ajusta según prefieras el tamaño */
+    /* CAMBIO CLAVE: flex-grow en 0 para que no se estiren */
+    /* flex: grow | shrink | basis */
+    flex: 0 1 350px; 
+    
+    width: 350px; /* Forzamos el ancho para que todas sean iguales */
     background: rgba(255,255,255,0.04);
     padding: 35px;
     border-radius: 25px;
@@ -992,6 +994,8 @@ footer{
 
     .education-card{
 
+        flex: 1 1 auto; /* Aquí sí permitimos que se estiren para llenar el ancho del celular */
+        width: 100%;
         max-width: 100%;
     }
 
