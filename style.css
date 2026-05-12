@@ -17,7 +17,7 @@ body{
 
     background:
     linear-gradient(rgba(7, 7, 10, 0.88), rgba(7, 7, 10, 0.92)),
-    url('Imagenes/fondo-ministerial.webp');
+    url('fondo-ministerial.webp');
 
     background-size: cover;
     background-position: center;
